@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/reserve.css')}}"
+    />
+    <title></title>
+  </head>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="flashes">
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+  <body>
+    <div class="e_h3">
+      <h3>Reservations</h3>
+    </div>
+    <div class="res">
+      <form class="res_form" method="post" action="{{ url_for('book_reserve') }}">
+        <label for="customer_name">Customer Name</label>
+        <input
+          type="text"
+          id="customer_name"
+          name="customer_name"
+          placeholder="Customer Name"
+          required
+        />
+        <label for="telephone-number">Tel Number</label>
+        <input
+          type="text"
+          id="telephone_number"
+          name="telephone_number"
+          placeholder="eg +2335418280"
+          required
+        />
+
+        <label for="location">Location</label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          placeholder="location "
+          required
+        />
+        <label for="description">Description</label>
+        <br />
+        <textarea
+          id="description"
+          name="description"
+          rows="2"
+          cols="100"
+          placeholder="Write brief message about this Reservation"
+          required
+        ></textarea>
+        <br />
+
+        <br />
+        <div class="orderLines">
+          <button type="submit" id="apply">Apply</button>
+          <button type="submit" id="addLine">addLine</button>
+        </form>
+    </div>
+    <footer class="foot"></footer>
+
+    <script src="{{ url_for('static', filename='scripts/reserve.js') }}"></script>
+  </body>
+</html>

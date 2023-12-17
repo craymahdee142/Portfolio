@@ -1,0 +1,66 @@
+/*styles for book a table */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.book_header {
+    margin-top: 20px;
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 40px;
+    background-color: rgb(45, 3, 3);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.b_h1 {
+   color: white; 
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 8px;
+   margin-left: 20px;
+   padding-top: 1.5px;
+}
+
+  /*text-decoration: none;*/
+.details a {
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(95, 95, 230);
+    font-weight: bold;
+    margin-top: -10px;
+    text-decoration: none;
+    margin-left: 25px;
+}
+ 
+.section {
+    width: 50%;
+    height: 140px;
+    /*background-color: rgb(80, 51, 30);*/
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* effect style on the book a table items*/
+.details a::before {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: 0.4s;
+    left: 0;
+    bottom: -8px;
+    background-color: #f4eaea;
+}
+.details a:hover::before {
+    width: 100%;  
+}   
+.details a:hover {
+    background-color: rgb(74, 73, 102);
+    color: rgb(242, 246, 122);
+}
+
+.section a {
+    margin-top: 10px;
+}
+

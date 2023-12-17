@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/income.css')}}"
+    />
+    <title></title>
+  </head>
+  <body>
+    <div class="inc_hub">
+        <h3>Expenses Hub</h3>
+        <p>[Expenses yet to pay]</p>
+      </div>
+        <ul>
+          {% for booking in expenses_bookings %}
+              <li>{{ booking.document_number }} - {{ booking.description }} - {{ booking.total }}</li>
+              {% endfor %}
+        </ul>
+  </body>
+</html>

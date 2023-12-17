@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/ledger.css')}}"
+    />
+    <title></title>
+  </head>
+  <body>
+    <header class="expHeader">
+      <div class="e_h3">
+        <h3>Cash Flows</h3>
+      </div>
+    </header>
+    <section class="content">
+      <div class="exp_bookings">
+        <a href="{{ url_for('bookings') }}">Bookings</a>
+      </div>
+      <div class="details">
+        <a href="income">Income</a>
+        <a href="expenses">Expenses</a>
+        <a href="receivables">Receivables</a>
+        <a href="payables">Payables</a>
+        <a href="cashBalance">Cash At Bank</a>
+      </div>
+    </section>
+    <div class="line"></div>
+    <div class="reporting">
+      <div class="rpt">
+        <h4>Reporting</h4>
+      </div>
+      <div class="reportDetails">
+        <a href="/period">Income Statement</a>
+        <a href="/balance_period">Balance Sheet</a>
+      </div>
+    </div>
+  </body>
+</html>

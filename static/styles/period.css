@@ -1,0 +1,68 @@
+.container {
+    width: 410px;
+    height: 30px;
+    border-color: rgb(178, 175, 182);
+    border-radius: solid 2px;
+    background-color: rgb(164, 175, 175);
+    padding: 2% 5px;
+    margin-left: 140px;
+    margin-top: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+/* style for form class */
+.container .period-form {
+    padding: 5px;
+    margin-left: 5px;
+}
+/* style for label */
+.container .period-form label {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* style for input */
+.container .period-form label {
+    border-radius: 8px;
+}
+
+/* style for button */
+.btn {
+    margin-left: 62.5%;
+    margin-top: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
+    background-color:rgb(123, 123, 241);
+    cursor: pointer;
+    color: #fff;
+}
+
+/* effect style on the book a table items*/
+.btn::before {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: 0.4s;
+    left: 0;
+    bottom: -8px;
+    background-color: #f6f0f0;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: rgb(74, 73, 102);
+    color: rgb(174, 190, 174);
+}
+  
+/* style for paragragh */
+p {
+    margin-left: 140px;
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}

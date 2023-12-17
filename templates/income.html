@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/income.css')}}"
+    />
+    <title></title>
+  </head>
+  <body>
+    <div class="inc_hub">
+        <h3>Income Hub</h3>
+        <p>[Invoiced Items]</p>
+      </div>
+      <table class="inc_table">
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>invoice_id</td>
+                <td>total</td>
+                <td>date_created</td>
+            </tr>
+        </thead>
+       
+        <tbody class="rowtr" >
+            {% for entry in income_entries %}
+            <tr>
+                <td>{{ entry.id }}</td>
+                <td>{{ entry.invoice_id }}</td>
+                <td>{{ entry.total }}</td>
+                <td>{{ entry.date_created }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+
+  </body>
+</html>

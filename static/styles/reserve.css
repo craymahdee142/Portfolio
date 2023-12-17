@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*style for e_h3 */
+.e_h3 {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    background-color: rgb(45, 3, 3);
+    height: 40px;
+    width: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.e_h3 h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;  
+    font-size: 14px;
+    padding: 10px; 
+    text-align: center;
+}
+/*style for pointOrder */
+.res{
+    width: auto;
+    height: 280px;
+    background-color: rgb(211, 138, 138);
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/*style for res_form */
+.res .res_form {
+    align-items: center;
+    height: 50vh;
+    display: grid;
+    padding: 20px 30% 140px;
+    padding-top: 10px;
+}
+
+/*style for form  lable*/
+.res .res_form label {
+    font-size: 12px;
+    color: #0c2e78f7;  
+    margin-left: 30px;
+    margin-top: -5px;
+    margin-left: 0px;
+    padding-top: 6px;
+}
+/*style for form text select */
+.res form select {
+    font-size: 10px;
+    padding: 3px 3px;
+    border-radius: 5px;
+}
+
+.res .res_form textarea {
+    border-radius: 5px;
+    padding: 2px 3px;
+}
+/*style for form text input*/
+.res .res_form input {
+    font-size: 10px;
+    padding: 3px 3px;
+    border-radius: 5px;
+}
+/*style for form button*/
+.res .res_form button {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 3px;
+    border-radius: 5px;
+    border: rgb(211, 138, 138);
+    background-color: green;
+    color: rgb(233, 221, 244);
+    height: 20px;
+}
+
+.foot {
+    height: 20px;
+}
+
+/* style for flash message */
+.flashes {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 5px;
+}

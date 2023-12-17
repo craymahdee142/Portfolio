@@ -1,0 +1,79 @@
+/* menu style */
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+/*style for header */
+.body_header {
+    background-color: rgb(43, 17, 17);
+    height: 40px;
+    margin-top: 20px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-bottom: px;
+    margin-left: 40px;
+}
+
+.container .title {
+    font-size: 20px;
+    color: #faf7f7;
+    text-align: center;
+    padding: 10px;
+}
+
+.container .meals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.container .meals-container .meal {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow:  0.5rem #333;
+    outline: 3px solid #ccc;
+    outline-offset: -5px;
+    cursor: pointer;
+}
+
+.container .meals-container .meal img {
+    height: 60px;
+}
+
+.container .meals-container .meal:hover {
+    outline: 4px solid green;
+    outline-offset: 0px;
+}
+
+.container .meals-container .meal h3 {
+    font-size: 15px;
+    color: rgb(34, 98, 194);
+}
+
+.container .meals-container .meal .price {
+    font-size: 12px;
+    color: rgb(22, 22, 23);
+    font-weight: bold;font-style: inherit;
+}
+
+.footer {
+    height: 30px;
+}
+
+.back {
+    margin-top: 10px;
+    border-radius: 7px;
+    background-color: yellowgreen;
+}

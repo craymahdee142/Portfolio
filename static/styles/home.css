@@ -1,0 +1,187 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+/* styles for logo */
+.header {
+    margin-top: 20px;
+    height: 90px;
+    width: auto;
+    background-color: rgb(45, 3, 3);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+/* styles for logo */
+.logo {
+    width: 22px;
+    height:20px; 
+    padding-top: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+/*style for h1*/
+.title {
+    color: white;
+    margin-left: 45px;
+    margin-top:  -40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+/*style for links*/
+.links {
+    display: flex;
+    margin-left: 270px;
+    margin-top: -33px;
+    gap: 24px;
+}
+.links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*make book a table in horizontal*/
+.links a[href="/book"] {
+    white-space: nowrap;
+}
+/*styles for login logo*/
+.login_logo {
+    width: 11x;
+    height: 11px;
+    margin-top: 8px;
+    display: flex;
+    margin-left: 88%;
+    border-radius: 50%;
+    position: relative;
+}   
+/* effect style on the header items*/
+.links a::before {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: 0.4s;
+    left: 0;
+    background-color: #f4eaea;
+}
+.links a:hover::before {
+    width: 100%;
+}
+.links a:hover {
+    background-color: #f4eaea;
+    color: rgb(229, 15, 15);
+}
+/*style for container*/
+.container {
+    width: 35%;
+    height: 250px;
+    background-color:  rgb(45, 3, 3);
+    margin-left: 20px;
+    margin-top: -20px;
+}
+/*styles for wlecome*/
+h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+    padding-top: 20px;
+    text-align: center;
+}
+p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -8px;
+}
+
+/*backgorund style*/
+body {
+    padding: 0;
+    margin: 0;
+    /*background-image: url(../static/images/imgb.png);*/
+    background-position: center;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+}
+/*
+/*styles for display image *
+.d_img1 {
+    margin-left: 28.3%;
+    margin-top: 20.5px;
+    height: 250px;
+    position: relative;
+}
+*/
+/*style for footer */
+.footer {
+    background-color: rgb(45, 3, 3);
+    width: auto;
+    height: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 20px;
+}
+/*style for open time */
+.open_time {
+    color: rgb(89, 143, 213);
+    margin-left: 20px;
+    padding: 20px;
+    font-style: italic;
+    font-size: 10px;
+}
+/*style for links 2 */
+.links2 {
+    display: flex;
+    margin-left: 60%;
+    margin-top: -60px;
+    gap: 28px;
+}
+.links2 a {
+    color: rgb(231, 196, 135);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12x;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* effect style on the footer items*/
+.links2 a::before {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: 0.4s;
+    left: 0;
+    background-color: #f4eaea;
+}
+.links2 a:hover::before {
+    width: 100%;
+}
+.links2 a:hover {
+    background-color: #f4eaea;
+    color: rgb(229, 15, 15);
+}
+
+/* style for footer bottom */
+.bottom p {
+    margin-top: -18px;
+    text-align: center;
+    font-style: oblique;
+    color: darkkhaki;
+    font-size: 12px;
+}
+
+.p {
+    height: 1.5px;
+    width: auto;
+    background-color: grey;
+    margin-bottom: -5px;
+    margin: 30px;
+}

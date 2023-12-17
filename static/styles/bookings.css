@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*style for bookings */
+.bookings {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    background-color: black;
+    height: 40px;
+    width: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.bookings h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;  
+    font-size: 14px;
+    padding: 10px; 
+    text-align: center;
+}
+/*style for booking container */
+.book {
+    width: auto;
+    height: 280px;
+    background-color: rgb(211, 138, 138);
+    margin-top: 8px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/*style for booking form */
+.book form {
+    
+    align-items: center;
+    height: 40vh;
+    display: grid;
+    padding: 60px 32% 30px;
+    padding-top: 10px;
+}
+/*style for booking  lable*/
+.book form label {
+    font-size: 12px;
+    color: #0c2e78f7;  
+    margin-left: 30px;
+    margin-top: -5px;
+    margin-left: 0px;
+    padding-top: 5px;
+}
+/*style for booking text select */
+.book form select {
+    font-size: 10px;
+    padding: 3px 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.book form textarea {
+    border-radius: 5px;
+    padding: 2px 3px;
+}
+/*style for booking form text input*/
+.book form input {
+    font-size: 10px;
+    padding: 3px 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-top: 5px;
+}
+
+/*style for form button*/
+.book form button {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 3px;
+    border-radius: 5px;
+    border: rgb(211, 138, 138);
+    background-color: green;
+    margin-top: 10px;
+    height: 20px;
+    cursor: pointer;
+}

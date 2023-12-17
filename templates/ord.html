@@ -1,0 +1,85 @@
+<body>
+  <div class="orders">
+    <h2>Manage Orders</h2>
+  </div>
+
+  
+  <div class="table-a">
+    <form class="form main">
+      <div class="form-group">
+        <label for="formGroupInput">Prd_Code</label>
+        <input
+          type="number"
+          class="form-control"
+          id="ids"
+          oninput="calculate(); populateProductName();"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupInput">Prd_Name</label>
+        <input type="text" class="form-control" id="product" />
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupInput">Price</label>
+        <input
+          type="number"
+          class="form-control"
+          id="prc"
+          oninput="calculate()"
+        />
+      </div>
+      <div class="form-group">
+        <label for="formGroupInput">Qty</label>
+        <input
+          type="number"
+          class="form-control"
+          id="qty"
+          oninput="calculate()"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupInput">Amt</label>
+        <input type="number" class="form-control" id="amt" />
+      </div>
+
+      <button type="button" class="btn" id="addBtn">add</button>
+    </form>
+  </div>
+
+  <table>
+      <thead>
+          <tr>
+              <th>Prod_Code</th>
+              <th>Prod_Name</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Amt</th>
+          </tr>
+      </thead>
+      <tbody id="newtr">
+         
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          
+      </tbody>
+      <tfoot class="tot">
+        <tr>
+          <th>Total:</th>
+          <th id="total"></th>
+        </tr>
+      </tfoot>
+  </table>
+  <button type="submit" class="btn-invoice" id="generate-invoice">print receipt</button>
+
+
+  <script src="{{ url_for('static', filename='scripts/invoice.js') }}"></script>
+</body>
+</html>

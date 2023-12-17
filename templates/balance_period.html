@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/balance_period.css')}}"
+    />
+    <title></title>
+  </head>
+    <body>
+      <p>Kindly select date for Financial Position report</p>
+      <div class="container">
+        <form class="balance_period" id="balanceSheet">
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" value="{{ today_date }}" required>
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" value="{{ today_date }}" required>
+            <br>
+            
+        </form>
+         
+        </div>
+        <button type="submit" class="btn" id="income-statement">Get Report</button>
+
+        <script src="{{ url_for('static', filename='scripts/balance_period.js') }}"></script>
+    </body>
+</html>

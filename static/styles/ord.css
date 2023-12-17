@@ -1,0 +1,105 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*style for orders */
+.orders {
+    width: 430px;
+    height: 40px;
+    background-color: rgb(35, 22, 22);
+    margin-left: 25px;
+    /*margin-right: 25px;*/
+    /*border-top-right-radius: 10px;*/
+    border-top-left-radius: 10px;
+}
+
+.orders h2 {
+    color: #fff;
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* style for table a */
+.table-a {
+    width: 300px;
+    height: auto;
+    /*background-color: #f8a4a4;*/
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-left: 25px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.table-b {
+    width: 285px;
+    height: auto;
+    background-color: rgb(224, 229, 234);
+    padding-top: -15px;
+    margin-top: -291px;
+    margin-left: 455px;
+    border-top-right-radius: 5px;
+    /*border-top-left-radius: 5px;*/
+}
+/* style for form */
+.form-group {
+    display: grid;
+}
+.form-group label {
+    padding: 2px;
+}
+
+/* style for table ids, prod_name, del */
+.table-name {
+    color: black;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+/* style for #newtr */
+#newtr {
+    color: blueviolet;
+    font-size: 10px;
+    padding-top: 20px;
+}
+/* style for tfoot */
+.tot {
+    color: black;
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 5px;
+    margin-left: 210px;
+}
+
+.tot tr {
+    margin-bottom: 5px;
+    margin-left: 210px;
+}
+
+#subtotal-amount, #vat-amount, #total-amount {
+    text-align: left;
+}
+
+/*style for invoice button */
+.btn-invoice {
+    width: 85px;
+    height: 20px;
+    background-color: #fff;
+    margin-left: 85.5%;
+    border-radius: 5px;
+    margin-top: 2px;
+
+}
+
+.btn-invoice {
+   color: deepskyblue;
+   cursor: pointer;
+   font-weight: bold;
+   font-size: 12px;
+}
+
+/* style for Go back */
+.back {
+    width: 67px;
+}

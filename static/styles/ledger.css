@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+/*style for header */
+.expHeader {
+    width: auto;
+    height: 40px;
+    background-color: rgb(45, 3, 3);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.e_h3 {
+    font-size:13px;
+    color: #fff;
+    margin-left: 15px;
+    padding: 8px;
+}
+
+/*styles for section */
+.content {
+    width: auto;
+    height: 280px;
+    background-color: rgb(45, 3, 3);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    margin-top: 2px;
+}
+
+/* style for bookings */
+.exp_bookings {
+    width: 15%;
+    height: 25px;
+    background-color: rgb(19, 29, 236);
+    border-radius: 90px;
+}
+
+.exp_bookings a {
+   font-weight: bold;
+   align-items: center;
+   text-decoration: none;
+   margin-left: 15px;
+   color: #fff;
+}
+
+/* styles for details */
+.details {
+    padding-top: 30px;
+    display: flex;
+    gap: 15px   ;
+}
+
+.details a {
+    font-weight: bold;
+    font-size: 17px;
+    color: #d3bfbf;
+    text-decoration: none;
+    margin-top: -10px;
+}
+/*style for reporting */
+.reporting {
+    padding-top: 15px;
+}
+/*style for h4 */
+.rpt {
+    width: 15%;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 90px;
+    margin-left: 35px;
+}
+
+.rpt h4 {
+    font-weight: bold;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 15px;
+    color: rgb(59, 4, 110);
+ }
+.line {
+    width: auto;
+    height: 1.8px;
+    background-color: #f7f0f0;
+    margin-top: -120px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+/*style for reportDetails */
+.reportDetails {
+    padding-top: 15px;
+    margin-left: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.reportDetails a {
+    text-decoration: none;
+    color: #d3bfbf;
+    font-weight: bold;
+}
+
+/*transition style 
+.exp_bookings a::before {
+    
+    width: 0;
+  
+    background-color: transparent;
+    height: 2px;
+    left: 0;
+    cursor: pointer;
+}
+
+.exp_bookings a:hover::before {
+   background-color: green;
+   width: 100%;
+}*/
